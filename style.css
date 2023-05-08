@@ -1,0 +1,770 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: #D9D9D9 !important;
+}
+/* header */
+header{
+    background-color: #1E1E1E;
+}
+#check{
+  display: none;
+}
+nav, .subnav{
+    display: flex !important; 
+    justify-content: space-between;
+}  
+
+.subnav{
+  margin-bottom: 50px;
+}
+nav ul.left {
+    display: flex;
+    list-style: none;
+} 
+  
+nav ul.right {
+    display: flex;
+    list-style: none;
+} 
+
+header nav ul{
+  padding: 0px 0px;
+  margin-bottom: 0px;
+}
+.nav1 ul{
+  padding: 0px 0px;
+  margin-bottom: 0px;
+}
+header nav ul li{
+    margin-left: 10px;
+    padding: 0px 5px;
+} 
+
+.nav1 ul li{
+  margin-left: 10px;
+  padding: 0px 5px;
+} 
+
+header nav ul li:first-child{
+  padding-left: 0px;
+}
+
+.nav1 ul li:first-child{
+  padding-left: 0px;
+}
+
+header nav ul li::before {
+    content: "";
+    display: inline-block;
+    height: 15px;
+    width: 1px; 
+    background-color: #4c4c4c;
+    margin-right: 10px; 
+  }
+
+  
+header nav ul li:first-child::before {
+    display: none;
+}
+
+header nav ul li:last-child {
+    margin-right: 10px
+}
+
+.nav1 ul li:last-child {
+  margin-right: 10px
+}
+
+
+  
+nav a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 50px;
+}
+
+nav li:hover{
+    background-color: #DE4F11;
+}
+
+.nav1 li:hover{
+  background-color: #DE4F11;
+}
+
+
+nav a:hover{
+    color: #FFFFFF;
+} 
+
+.nav1 a:hover{
+  color: #FFFFFF;
+} 
+
+.logo a {
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 40px;
+  color: #FFFFFF;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.search form {
+  display: flex;
+}
+
+.search input[type="text"] {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  padding: 5px;
+  margin-right: 10px;
+  width: 400px;
+}
+
+.search button[type="submit"] {
+  border: none;
+  background: none;
+  color: #ccc;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.icons a {
+  font-size: 28px ;
+  margin-left: 20px;
+  color: #FFFFFF;
+}
+
+.menu-toggle {
+  display: none;
+  color: #333;
+}
+
+
+.subnav nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav input[type="text"] {
+    width: 503px;
+}
+
+.subnav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.search form {
+  display: flex;
+}
+
+.search input[type="text"] {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.search button[type="submit"] {
+  border: none;
+  background: none;
+  color: #ccc;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.menu-toggle {
+  display: none;
+  color: #333;
+}
+
+/* category */
+.category{
+    background-color: #8D8C8C;
+    display: flex;
+    justify-content: center
+}
+.category ul li::before{
+    display: none;
+}
+.category ul {
+    display: flex;
+    justify-content: space-between; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .category li {
+    margin: 0px 20px;
+    text-align: center;
+  }
+
+  .category li.active  {
+    background-color: #DE4F11; 
+  }
+  
+.category a{
+    color:#1E1E1E;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 56px;
+    padding: 0px 12px;
+}
+/* slide */
+.slide{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* carousel */
+.trending_category, .flash_sale{
+    background-color: white !important;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 35px;
+}
+
+.collections .card-body{
+  background-color: #034266;
+}
+
+.collections .card-body a{
+  color: #FFFFFF;
+}
+
+.collections .card-body a:hover{
+  color: #DE4F11;
+}
+.discovernow{
+  background-color: #D9D9D9; 
+   padding-left: 15px; 
+   text-decoration: none; 
+   color: #DE4F11;
+   background-color: #034266;
+}
+
+.discovernow:hover{
+  color: #ccc;
+}
+h2{
+  color:#DE4F11;
+}
+
+.card {
+    height: 100%;
+    background-color: #D9D9D9;
+    /* box-shadow: 0px 0px 5px #ccc; */
+  }
+  
+  .card-img-top {
+    height: 245px;
+    object-fit: cover;
+  }
+  
+  .card-body{
+    background-color: #D9D9D9;
+  }
+
+  .card-body a{
+    text-decoration: none;
+    font-size:large;
+    font-weight: 650;
+    color: #1E1E1E;
+  }
+
+  .card-body a:hover{
+    color: #034266;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 3%;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    height: 100%;
+    transform: translate(0,-50%);
+    top: 50%;
+    opacity: .5;
+  }
+  
+  .carousel-control-prev-icon:hover,
+  .carousel-control-next-icon:hover,
+  .carousel-control-prev-icon:focus,
+  .carousel-control-next-icon:focus {
+    opacity: .8;
+  }
+  
+  .carousel-indicators {
+    bottom: -50px;
+  }
+  
+  .carousel-indicators li {
+    background-color: #ccc;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+  }
+  
+  .carousel-indicators .active {
+    background-color: #428bca;
+  }
+
+
+  /* simple-mall */
+
+  .simple-mall {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    background-color: #FFFFFF;
+  }
+
+  .simple-mall .col-sm-6{
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgb(212, 209, 209);
+    padding: 3px;
+  }
+
+  .simple-mall .col-3{
+    width: calc(25% - 20px);
+    margin-bottom: 20px;
+    background-color: #D9D9D9;
+  }
+  
+  .product-img-container {
+    display: flex;
+    align-items: center;
+    height: 200px; /* Chiều cao cố định */
+  }
+  
+  .product-img {
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+  }
+  
+
+  .brand-logo{
+    width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  }
+  
+  .shop{
+    padding-top: 10px;
+    display: block;
+    text-align: center;
+    align-items: center;
+    padding: 0px auto;
+  }
+  .mall{
+    background-color: #FFFFFF;
+    margin-top: 30px;
+    padding-top: 20px;
+
+  }
+
+.titlemall{
+  display: flex;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+   justify-content: space-between;
+   padding: auto 40px;
+}
+
+.titlemall h2{
+  margin-bottom: 5px;
+}
+
+.titlemall a{
+  color: #DE4F11;
+  font-size: 20px;
+}
+
+ /* Daily Discover  */
+ .dailyDiscover{
+  background-color: #FFFFFF;
+  margin-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+
+}
+ .daily{
+  display: flex;
+  justify-content:center ;
+  border-bottom: 5px solid #DE4F11 ;
+ }
+
+.daily-discover{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+  .card-text{
+  color: #DE4F11;
+  margin-bottom: 20px 1;
+ }
+
+
+     /* footer */
+     footer{
+      background-color: #000;
+     }
+     footer div{
+      margin-bottom: 10px;
+     }
+     footer div:last-child{
+      margin-bottom: 0px;
+     }
+     footer p{
+      color: #FFFFFF;
+     }
+     .ft-link{
+      padding: 0px 40px;
+     }
+     .ft-link ul{
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+     }
+     .ft-link a{
+      text-decoration: none;
+      color: #FFFFFF;
+     }
+    
+
+
+
+/* Media queries */
+@media only screen and (max-width: 767px) {
+
+  .checkbtn{
+    font-size: 30px;
+    float:right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #check{
+    display: none;
+  }  
+
+  .checkbtn1{
+    font-size: 30px;
+    float:left;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #check1{
+    display: none;
+  } 
+  header nav {
+    position: fixed;
+    width: 100%;
+    background-color: #f2f5f7;
+    top:40px;
+    display: block !important;
+    transition: all .5s; 
+    z-index: 99999;
+    
+}
+
+.nav1 {
+  position: fixed;
+  width: 100%;
+  background-color: #f2f5f7;
+  top:40px;
+  display: block !important;
+  transition: all .5s; 
+  z-index: 99999;
+  
+}
+
+.nav1 ul{
+  display: block;
+}
+
+header nav ul.left , header nav ul.right{
+  display: block;
+} 
+
+header nav ul li a{
+    display: block;
+    font-size: 18px;
+    color: black;
+}
+
+.nav1 ul li a{
+  display: block;
+  font-size: 18px;
+  color: black;
+}
+
+header nav {
+    display: none !important;
+}
+
+header nav ul li::before{
+  display: none;
+}
+#check:checked + nav {
+  display:block !important;
+}
+
+#check1:checked + nav  {
+  display:block !important;
+}
+
+#check:not(:checked) + nav {
+  display: none;
+}
+
+#check1:not(:checked) + nav  {
+  display: none;
+}
+
+  /* Thiết lập kiểu hiển thị cho label */
+  .checkbtn {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    order: 2;
+    margin-top: 8px;
+    margin-right:10px;
+
+}
+
+.checkbtn1 {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  order: 2;
+  margin-top: 8px;
+  margin-right:10px;
+
+}
+
+/* Chỉnh sửa hiển thị icon */
+
+.checkbtn i {
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.checkbtn1 i {
+  font-size: 24px;
+  color: #FFFFFF;
+}
+    .carousel-item .card {
+        margin-right: 0;
+      }
+
+    .search input[type="text"]{
+      width: 100px;
+    }
+
+    .icons a{
+      font-size: 20px;
+    }
+    
+.subnav .logo a{
+  text-decoration: none;
+  font-size:x-large;
+  color: #FFFFFF;
+}
+
+    /* footer */
+ footer{
+  background-color: #000;
+ }
+ footer div{
+  margin-bottom: 10px;
+ }
+ footer p{
+  color: #FFFFFF;
+ }
+ .ft-link{
+  padding: 0px 40px;
+ }
+ .ft-link ul{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+ }
+ .ft-link a{
+  text-decoration: none;
+  color: #FFFFFF;
+ }
+
+
+ 
+    
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    nav li {
+      width: 20%;
+    }
+            .carousel-item .card {
+        margin-right: 0;
+        margin-bottom: 15px;
+        flex-basis: auto;
+        }
+    .search input[type="text"]{
+      width: auto;
+    }
+
+    .checkbtn{
+      font-size: 30px;
+      float:right;
+      line-height: 80px;
+      margin-right: 40px;
+      cursor: pointer;
+      display: none;
+    }
+
+    .checkbtn1{
+      font-size: 30px;
+      float:left;
+      line-height: 80px;
+      margin-right: 40px;
+      cursor: pointer;
+      display: none;
+    }
+    
+    #check{
+      display: none;
+    }  
+
+    #check1{
+      display: none;
+    } 
+    header nav {
+      position: fixed;
+      width: 100%;
+      background-color: #f2f5f7;
+      top:40px;
+      display: block !important;
+      transition: all .5s; 
+      z-index: 99999;
+      
+  }
+  .nav1 {
+    position: fixed;
+    width: 100%;
+    background-color: #f2f5f7;
+    top:85px;
+    display: block !important;
+    transition: all .5s; 
+    z-index: 99999;
+    
+}
+  
+  header nav ul.left , header nav ul.right{
+    display: block;
+  } 
+  
+  header nav ul li a{
+      display: block;
+      font-size: 18px;
+      color: black;
+  }
+  header nav {
+      display: none !important;
+  }
+  header nav ul li::before{
+    display: none;
+  }
+  #check:checked + nav {
+    display:block !important;
+  }
+  
+  #check:not(:checked) + nav {
+    display: none;
+  }
+  
+  #check1:checked + .nav1 {
+    display:block !important;
+  }
+  
+  #check1:not(:checked) + .nav1 {
+    display: none !important;
+  }
+    /* Thiết lập kiểu hiển thị cho label */
+    .checkbtn {
+      display: flex;
+      justify-content: center;
+      cursor: pointer;
+      order: 2;
+      margin-top: 8px;
+      margin-right:10px;
+  
+  }
+
+  .checkbtn1 {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    order: 2;
+    margin-top: 8px;
+    margin-right:10px;
+
+}
+  
+  /* Chỉnh sửa hiển thị icon */
+  
+  .checkbtn i {
+      font-size: 24px;
+      color: #FFFFFF;
+  }
+
+    
+  .checkbtn1 i {
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+  
+      .search input[type="text"]{
+        width: 100px;
+      }
+  
+      .icons a{
+        font-size: 20px;
+      }
+  }
