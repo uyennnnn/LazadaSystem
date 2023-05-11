@@ -543,10 +543,52 @@ h2{
 
 .final td:nth-of-type(2){
   font-weight: bold;
+  font-size: 18px;
   color: #DE4F11;
 }
 
+.FinalTotal strong{
+  font-size: 18px;
+}
 
+.voucher b{
+  color:#DE4F11;
+  font-size: 20px;
+}
+
+.voucher img{
+  width: 28px;
+  height: 28px;
+}
+
+.voucher a{
+  font-size: 18px;
+  color: #034266;
+}
+
+.btncheckout{
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0px;
+  margin-bottom: 20px;
+}
+
+.btncheckout .checkout , .btncheckout .back{
+
+  background-color: #DE4F11;
+  border: 1px solid #DE4F11;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 6px 6px;
+  border-radius: 5%;
+}
+
+.btncheckout .checkout a, .btncheckout .back a{
+  text-decoration:none ; 
+  color: #f2f2f2;
+}
 /* Thiết lập kiểu cho phần tổng tiền */
 .total {
   text-align: right;
@@ -822,6 +864,25 @@ table td:nth-of-type(1)::before {
 table td:nth-of-type(2)::before {
   content: "Unit Price";
 }
+.voucher td:nth-of-type(1)::before {
+  content: none;
+  margin: 0px auto;
+}
+
+.voucher td:nth-of-type(2)::before {
+  content: none;
+}
+
+table td:nth-of-type(4)::before {
+  content: none;
+}
+.voucher td:nth-of-type(3)::before {
+  content:none;
+}
+.voucher td:nth-of-type(4)::before {
+  content:none;
+}
+
 
 .final td:nth-of-type(2){
   font-weight: bold;
@@ -839,6 +900,18 @@ table td:nth-of-type(4)::before {
 table td:nth-of-type(5)::before {
   content: none;
 }
+
+.voucher{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.voucher img{
+  margin: 0px 0px;
+}
 .final{
   display: flex;
   flex-direction: column;
@@ -850,6 +923,8 @@ table td:nth-of-type(5)::before {
   content: none !important;
   margin: 0px auto;
 }
+
+
 
 .final td:nth-of-type(2)::before {
   content: none;
