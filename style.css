@@ -15,13 +15,14 @@ header{
 #check{
   display: none;
 }
-nav, .subnav{
+.subnav, .nav1{
     display: flex !important; 
-    justify-content: space-between;
+    justify-content: center;
 }  
 
-.subnav{
-  margin-bottom: 50px;
+nav{
+  display: flex !important;
+  justify-content: space-between;
 }
 nav ul.left {
     display: flex;
@@ -38,8 +39,21 @@ header nav ul{
   margin-bottom: 0px;
 }
 .nav1 ul{
+  display: flex;
+  list-style: none;
   padding: 0px 0px;
   margin-bottom: 0px;
+  justify-content: space-between;
+}
+
+.nav1 ul li a{
+  font-size: x-large;
+  color:#000;
+  font-weight: 600;
+}
+
+.nav1 ul li a:hover{
+  color:#000;
 }
 header nav ul li{
     margin-left: 10px;
@@ -67,6 +81,18 @@ header nav ul li::before {
     background-color: #4c4c4c;
     margin-right: 10px; 
   }
+
+.nav1 li{
+  padding: 5px 0px !important;
+} 
+
+.nav1 li a{
+  padding: 0px 40px;
+}
+
+#check1 ,.checkbtn1{
+  display: none;
+}
 
   
 header nav ul li:first-child::before {
@@ -503,18 +529,31 @@ h2{
 }
 
 .nav1 {
+  display: block;
   position: fixed;
   width: 100%;
-  background-color: #f2f5f7;
-  top:40px;
-  display: block !important;
+  background-color: #8D8C8C;
   transition: all .5s; 
-  z-index: 99999;
+  z-index: 99999; 
+  margin-top: 35px;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
   
+}
+
+.category-text {
+  margin-right: 5px; /* Căn lề phải để tạo khoảng cách giữa chữ và biểu tượng */
+}
+
+#carouselExampleCaptions{
+  margin-top:0px;
 }
 
 .nav1 ul{
   display: block;
+}
+.nav1 ul li{
+  margin-left: 0px;
 }
 
 header nav ul.left , header nav ul.right{
@@ -544,16 +583,41 @@ header nav ul li::before{
   display:block !important;
 }
 
-#check1:checked + nav  {
+#check1:checked + .nav1  {
   display:block !important;
 }
 
-#check:not(:checked) + nav {
+#check:not(:checked) + .nav {
   display: none;
 }
 
-#check1:not(:checked) + nav  {
-  display: none;
+#check1:not(:checked) + .nav1  {
+  display: none !important;
+}
+
+.checkbtn1 i::before{
+  color: #000;
+}
+.checkbtn1 {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  margin-left: 10px;
+  z-index: 999;
+  background-color: #DE4F11;
+  color: #000;
+  padding: 0px 5px;
+  margin-bottom: 10px;
+  line-height: 2;
+}
+.checkbtn1 i{
+  font-size: 16px;
+  font-weight: 100;
+}
+.category-text {
+  margin-right: 5px; /* Căn lề phải để tạo khoảng cách giữa chữ và biểu tượng */
+  font-size: 18px;
+  font-weight: 600;
 }
 
   /* Thiết lập kiểu hiển thị cho label */
@@ -572,8 +636,6 @@ header nav ul li::before{
   justify-content: center;
   cursor: pointer;
   order: 2;
-  margin-top: 8px;
-  margin-right:10px;
 
 }
 
@@ -670,10 +732,6 @@ header nav ul li::before{
     #check{
       display: none;
     }  
-
-    #check1{
-      display: none;
-    } 
     header nav {
       position: fixed;
       width: 100%;
@@ -684,17 +742,6 @@ header nav ul li::before{
       z-index: 99999;
       
   }
-  .nav1 {
-    position: fixed;
-    width: 100%;
-    background-color: #f2f5f7;
-    top:85px;
-    display: block !important;
-    transition: all .5s; 
-    z-index: 99999;
-    
-}
-  
   header nav ul.left , header nav ul.right{
     display: block;
   } 
@@ -712,40 +759,17 @@ header nav ul li::before{
   }
   #check:checked + nav {
     display:block !important;
+    
   }
-  
-  #check:not(:checked) + nav {
-    display: none;
+  .nav1 li{
+    width: fit-content;
   }
-  
-  #check1:checked + .nav1 {
-    display:block !important;
-  }
-  
-  #check1:not(:checked) + .nav1 {
-    display: none !important;
-  }
-    /* Thiết lập kiểu hiển thị cho label */
-    .checkbtn {
-      display: flex;
-      justify-content: center;
-      cursor: pointer;
-      order: 2;
-      margin-top: 8px;
-      margin-right:10px;
-  
+  .nav1 ul li a{
+    font-size: medium;
+
   }
 
-  .checkbtn1 {
-    display: flex;
-    justify-content: center;
-    cursor: pointer;
-    order: 2;
-    margin-top: 8px;
-    margin-right:10px;
 
-}
-  
   /* Chỉnh sửa hiển thị icon */
   
   .checkbtn i {
@@ -766,5 +790,16 @@ header nav ul li::before{
   
       .icons a{
         font-size: 20px;
+      }
+      .checkbtn1 i{
+        font-weight: 550;
+      }
+      .category-text {
+        margin-right: 5px; /* Căn lề phải để tạo khoảng cách giữa chữ và biểu tượng */
+        font-weight:550;
+      }
+      
+      #carouselExampleCaptions{
+        margin-top:0px;
       }
   }
