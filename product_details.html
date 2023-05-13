@@ -11,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="script.js"></script>
-    <title>Document</title>
+    <title>Product Detail</title>
 </head>
 
 <body>
@@ -51,6 +51,7 @@
             </div>
         </div>
     </header>
+
     <main>
         <div style="background-color: #8D8C8C;">
             <input type="checkbox" id="check1" name="check1">
@@ -67,73 +68,57 @@
                 <span class="category-text">CATEGORIES</span>
             </label>
         </div>
-        <div class="container path">
-            <a class="logo" href="customer_page.html">
-                <b>SIMPLE</b>
-            </a>
-            <a class="pathlast" href="#">
-                Shopping Cart
-            </a>
-        </div>
-
-
-        <div class="container tbheader">
-            <div class="header1">Product </div>
-            <div>Unit Price</div>
-            <div>Quantity</div>
-            <div>Total price</div>
-            <div></div>
-        </div>
-
-        <table class="container cart">
-            <tbody>
-            </tbody>
-        </table> 
-
-        <div class="container voucher">
-            <div></div>
-            <div class="checkout">
-                <img src="image/voucher.png" alt=""> <b>Platform Voucher</b>
+        <div class="container details" data-product-id="1">
+            <div class="left-column">
+                <img src="image/colgat.jpg" alt="Hình ảnh lớn" class="idProduct">
             </div>
-            <div class="back">
-                <a href="#">Select or Enter code</a>
-            </div>
-        </div>
-        <div class="container DueForOder"><strong class="FinalTotal"><strong>Total amount due for the order </strong>   </div>
-        
-        <div class="container btncheckout">
-            <div></div>
-            <div class="checkout">
-                    <a href="#">Check out</a>
-            </div>
-            <div class="back">
-                <a href="#">Continue Shopping</a>
+            <div class="right-column">
+                <h1 class="product-name">Colgate Extra Clean Toothbrush</h1>
+                <div class="rating">
+                    <strong>4.0</strong>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+                <div class="sold">Đã bán: 100</div>
+                <div class="priceProduct">
+                    <div class="bprice">$</div>
+                    <div class="priceP">5.00</div>
+                </div>
+                <div class="quantity">
+                    <strong>Quantity: </strong>
+                    <button class="subtract-button">-</button>
+                    <input type="text" class="quantity-input" value="1">
+                    <button class="add-button">+</button>
+                </div>
+                <button class="add-to-cart-button">Thêm vào giỏ hàng</button>
             </div>
         </div>
 
     </main>
-  <footer>
-    <div class="container pt-4">
-      <div style="display:flex; justify-content: center; text-align: center;">
-        <p>
-          Buy everything you need, even for your kids, it’s all meet your needs
-        </p>
-      </div>
-      <div class="ft-link">
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Copyrights</a></li>
-          <li><a href="#">Privacy</a></li>
-          <li><a href="#">Helps</a></li>
-        </ul>
-      </div>
-      <div style="display:flex; justify-content: center; text-align: center;">
-        <p>Copyright © 2023 . RMIT University . All Rights Reserved</p>
-      </div>
-    </div>
-  </footer>
+
+    <footer>
+        <div class="container pt-4">
+            <div style="display:flex; justify-content: center; text-align: center;">
+                <p>
+                    Buy everything you need, even for your kids, it’s all meet your needs
+                </p>
+            </div>
+            <div class="ft-link">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Copyrights</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Helps</a></li>
+                </ul>
+            </div>
+            <div style="display:flex; justify-content: center; text-align: center;">
+                <p>Copyright © 2023 . RMIT University . All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
-
-            
