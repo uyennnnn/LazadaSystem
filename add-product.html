@@ -18,13 +18,10 @@
     <input type="checkbox" id="check" name="check">
     <nav class="container">
       <ul class="left">
-        <li><a href="#">Become our vendor</a></li>
-        <li><a href="#">Become our customers</a></li>
-        <li><a href="#">Become our delivery boys</a></li>
+        <li><a href="#">Add New Products</a></li>
+        <li><a href="#">View My Products</a></li>
       </ul>
       <ul class="right">
-        <li><a href="#">Log in</a></li>
-        <li><a href="#">Sign in</a></li>
       </ul>
     </nav>
     <label for="check" class="checkbtn"><i class="fa fa-bars"></i></label>
@@ -55,41 +52,42 @@
   <main>
     <div class="container-fluid" style="padding: 0;">
       <div class="d-flex justify-content-center align-items-center" style="height: 15vh; background-color: #034266;">
-        <div class="text-white text-center display-1">Create Account</div>
+        <div class="text-white text-center display-1">Add new product</div>
       </div>
     </div>
 
-    <div class="container" style="display: block;">
-      <div class="white-div d-flex align-items-center justify-content-center">
+    <div class="container" style="display:block;">
+      <div class="white-div align-items-center">
         <div class="row">
           
           <div class="col">
-            <div class="justify-content-center d-flex">
+            <h3>Product image</h3>
+            <div class="">
               <img id="preview-image" src="image/no-image.png" alt="Preview Image" style="max-width: 50%; height: auto;">
             </div>
-            <h3 class="text-center">Your image</h3>
             <form>
               <div class="form-group m-2">
                 <input type="file" class="form-control" id="input-image" name="profilePicture" placeholder="avatar">
               </div>
               <div class="form-group m-2">
-                <input type="text" class="form-control" id="input-name" name="username" placeholder="username">
-                <small style="color:red;">Please choose another username</small>
+                <h3>Product Name</h3>
+                <input type="text" class="form-control" id="input-name" name="product-name" placeholder="" required>
               </div>
               <div class="form-group m-2">
-                <input type="password" class="form-control" id="input-password" placeholder="Password">
+                <h3>Product description</h3>
+                <textarea type="text" class="form-control" name="" id="" cols="30" rows="5" required></textarea>
               </div>
-              <div class="form-group m-2">
-                <input type="password" class="form-control" id="input-password2" placeholder="Re enter password">
-                <small id="passwordMatchMessage"></small>
 
+              <div class="row m-0">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" id="input-name" name="product-name" placeholder="price" required>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <input type="text" class="form-control" id="input-name" name="product-name" placeholder="quantity" required>
+                </div>
               </div>
-              <div class="form-group m-2">
-                <input type="text" class="form-control" id="input-buisiness" placeholder="Buisiness name">
-              </div>
-              <div class="form-group m-2">
-                <input type="text" class="form-control" id="input-address" placeholder="Buisiness address">
-              </div>
+              
+              
               <div class="d-flex justify-content-center align-items-center">
                 <button style="width:70%; background-color:#DE4F11; color: white;" type="submit" class="btn rounded-pill">NEXT</button>
               </div>
@@ -118,30 +116,6 @@
           imagePreview.src = "#";
         }
       });
-
-      // Get references to the password input fields and the message element
-  const passwordInput = document.getElementById('input-password');
-  const password2Input = document.getElementById('input-password2');
-  const passwordMatchMessage = document.getElementById('passwordMatchMessage');
-
-  // Function to check if passwords match
-  function checkPasswordsMatch() {
-    const password = passwordInput.value;
-    const password2 = password2Input.value;
-
-    if (password === password2) {
-      passwordMatchMessage.textContent = 'Passwords match.';
-      passwordMatchMessage.classList.remove('text-danger');
-      passwordMatchMessage.classList.add('text-success');
-    } else {
-      passwordMatchMessage.textContent = 'Passwords do not match.';
-      passwordMatchMessage.classList.remove('text-success');
-      passwordMatchMessage.classList.add('text-danger');
-    }
-  }
-
-  // Add event listener to the second password input field
-  password2Input.addEventListener('input', checkPasswordsMatch);
 </script>
     </script>
     <style>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Document</title>
+  <style>
+    @media only screen and (max-width: 767px) {
+      table td:nth-of-type(1)::before {
+        content: "Order ID";
+        margin: 0;
+        margin-bottom: 5px;
+        margin-right: 50px;
+      }
+
+      table td:nth-of-type(2)::before {
+        content: "Product name";
+      }
+
+      table td:nth-of-type(3)::before {
+        content: "Customer";
+      }
+
+      table td:nth-of-type(4)::before {
+        content: "Date";
+      }
+
+      table td:nth-of-type(5)::before {
+        content: "Amount";
+      }
+
+      table td:nth-of-type(6)::before {
+        content: "Unit Price";
+      }
+
+      table td:nth-of-type(7)::before {
+        content: "Hub";
+      }
+
+      table td:nth-of-type(8)::before {
+        content: "Delivery";
+      }
+      table td:nth-of-type(9)::before {
+        content: "Status";
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <input type="checkbox" id="check" name="check">
+    <nav class="container">
+      <ul class="left">
+        <li><a href="#">Add New Products</a></li>
+        <li><a href="#">View My Products</a></li>
+      </ul>
+      <ul class="right">
+      </ul>
+    </nav>
+    <label for="check" class="checkbtn"><i class="fa fa-bars"></i></label>
+
+    <div class="subnav container mb-0">
+      <div class="logo">
+        <a href="#">
+          <b>SIMPLE</b>
+        </a>
+      </div>
+      <div class="nav-right">
+        <div class="search">
+          <form>
+            <input type="text" placeholder="search something here">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+        <div class="icons">
+          <a href="#"><i class="fa fa-shopping-cart"></i></a>
+          <a href="#"><i class="fa fa-user"></i></a>
+        </div>
+        <a href="#" class="menu-toggle"><i class="fa fa-bars"></i></a>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+    
+    <div class="container-fluid" style="padding: 0;">
+      <div class="d-flex justify-content-center align-items-center" style="height: 15vh; background-color: #034266;">
+        <div class="text-white text-center display-1">Order</div>
+      </div>
+    </div>
+
+    <div style="background-color: #8D8C8C;">
+      <input type="checkbox" id="check1" name="check1">
+      <nav class="container nav1">
+          <ul>
+              <li style="background-color: #DE4F11;"><a href="#">Order</a></li>
+              <li><a href="#">Product</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Contact Us</a></li>
+          </ul>
+      </nav>
+      <label for="check1" class="checkbtn1">
+          <i class="fa fa-bars"></i>
+          <span class="category-text">CATEGORIES</span>
+      </label>
+  </div>
+
+    <div class="container-fluid" style="margin-top: 50px; display:block; padding: 0;">
+      <div class="white-div align-items-center" style="padding: 0;">
+        <div class="row">
+
+          <div class="col">
+            <table class="table">
+              <thead style="background-color: #F6460E;">
+                <tr style="color: white;">
+                  <th>Order ID</th>
+                  <th>Product Name</th>
+                  <th>Customer</th>
+                  <th>Date</th>
+                  <th>Amount</th>
+                  <th>Unit Price</th>
+                  <th>Hub</th>
+                  <th>Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>#000000000</td>
+                  <td>Product 1</td>
+                  <td>Customer 1</td>
+                  <td>2023-05-14</td>
+                  <td>10</td>
+                  <td>$20.00</td>
+                  <td>Hub 1</td>
+                  <td>Delivered</td>
+                  <td><div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="actionDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                      Actions
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="actionDropdown">
+                      <li><button class="dropdown-item accept-btn">Delivered</button></li>
+                      <li><button class="dropdown-item decline-btn">Canceled</button></li>
+                    </ul>
+                  </div></td>
+                </tr>
+                <tr>
+                  <td>#000000000</td>
+                  <td>Product 2</td>
+                  <td>Customer 2</td>
+                  <td>2023-05-15</td>
+                  <td>5</td>
+                  <td>$15.00</td>
+                  <td>Hub 2</td>
+                  <td>Canceled</td>
+                  <td><div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="actionDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                      Actions
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="actionDropdown">
+                      <li><button class="dropdown-item accept-btn">Delivered</button></li>
+                      <li><button class="dropdown-item decline-btn">Canceled</button></li>
+                    </ul>
+                  </div></td>
+                </tr>
+                <!-- Add more rows as needed -->
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <script>
+      const imageInput = document.getElementById("input-image");
+      const imagePreview = document.getElementById("preview-image");
+
+      imageInput.addEventListener("change", function (event) {
+        const file = event.target.files[0];
+
+        if (file) {
+          const reader = new FileReader();
+
+          reader.onload = function (e) {
+            imagePreview.src = e.target.result;
+          };
+
+          reader.readAsDataURL(file);
+        } else {
+          imagePreview.src = "#";
+        }
+      });
+    </script>
+    </script>
+    <style>
+      .white-div {
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+    </style>
+
+
+
+  </main>
+
+  <footer>
+    <div class="container pt-4">
+      <div style="display:flex; justify-content: center; text-align: center;">
+        <p>
+          Buy everything you need, even for your kids, it’s all meet your needs
+        </p>
+      </div>
+      <div class="ft-link">
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Copyrights</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Helps</a></li>
+        </ul>
+      </div>
+      <div style="display:flex; justify-content: center; text-align: center;">
+        <p>Copyright © 2023 . RMIT University . All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
